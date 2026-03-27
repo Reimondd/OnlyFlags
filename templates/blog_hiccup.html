@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archive Entry</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="page-d">
+    <header class="topbar">
+        <div class="brand brand-logo">
+            <img src="{{ url_for('static', filename='images/onlyflags_logo.png') }}" alt="Site logo" class="site-logo">
+        </div>
+        <nav class="nav">
+            <a href="{{ url_for('blog') }}">Back to Blog Hub</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="hero glass small">
+            <span class="pill">Archive Entry</span>
+            <h2>Bee Movie meme headquarters</h2>
+            <p>According to all known laws of aviation, this page should not go this hard.</p>
+        </section>
+
+        <section class="media-card glass">
+            <div class="media-top">WHEN YOU GRADUATE TODAY</div>
+            <div class="media-bottom">AND ALREADY HAVE TO WORK FOREVER</div>
+        </section>
+
+        <section class="stack">
+            <article class="card glass">
+                <h3>Storytime</h3>
+                <p>
+                    Barry: “Alex told me that by now, only one name should fit.”
+                </p>
+            </article>
+
+            <article class="card glass">
+                <h3>Bee wisdom</h3>
+                <p>
+                    "You've found the Lion, the Panda, and the Dragon. But every hive needs a drone—search for the guy who lost his 'Lordship' in the lawsuit. We stripped his nobility faster than a Pollen Jock strips a flower."
+                </p>
+            </article>
+
+            <article class="card glass">
+                <h3>Bee meme report #2</h3>
+                <p>
+                    Society: just be a normal bee.<br>
+                    Barry: no, I think I will question the entire economic system.
+                </p>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

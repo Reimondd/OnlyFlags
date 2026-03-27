@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archive Entry</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="page-a">
+    <header class="topbar">
+        <div class="brand brand-logo">
+            <img src="{{ url_for('static', filename='images/onlyflags_logo.png') }}" alt="Site logo" class="site-logo">
+        </div>
+        <nav class="nav">
+            <a href="{{ url_for('blog') }}">Back to Blog Hub</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="hero glass small">
+            <span class="pill">Archive Entry</span>
+            <h2>Swamp memes only</h2>
+            <p>The swamp is under control. The visitors are not.</p>
+        </section>
+
+        <section class="media-card glass">
+            <div class="media-top">WHEN YOU SAY “SOMEONE IS IN MY SWAMP”</div>
+            <div class="media-bottom">BUT IT'S JUST DONKEY AGAIN</div>
+        </section>
+
+        <section class="stack">
+            <article class="card glass">
+                <h3>Storytime</h3>
+                <p>
+                    Shrek: “It’s an overly-manicured spot in a world that’s supposed to be wild.”
+                </p>
+            </article>
+
+            <article class="card glass">
+                <h3>The reflection of the swamp</h3>
+                <p>
+                    "Mirror, mirror on the wall, who is the shortest of them all? He’s looking for perfection, but you won't find his title in the path."
+                </p>
+            </article>
+
+            <article class="card glass">
+                <h3>Swamp Security Advisory</h3>
+                <p>
+                    Unauthorized visitors will be judged, yelled at, and possibly launched into the nearest mud puddle.
+                </p>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

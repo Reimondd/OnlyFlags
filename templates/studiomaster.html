@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Congratulations!</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="page-final">
+    <main class="final-card">
+        <span class="final-badge">Access Granted</span>
+        <h1>Welcome</h1>
+        <p class="final-subtitle">
+            You made it through the challenge. Your final flag is below.
+        </p>
+
+        <div class="flag-box">{{ F }}</div>
+
+        <p class="final-footer">Access complete.</p>
+    </main>
+</body>
+</html>

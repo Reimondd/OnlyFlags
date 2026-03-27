@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnlyFlags | Archive Hub</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="page-hub">
+    <header class="topbar">
+        <div class="brand brand-logo">
+            <img src="{{ url_for('static', filename='images/onlyflags_logo.png') }}" alt="Site logo" class="site-logo">
+        </div>
+        <nav class="nav">
+            <a href="{{ url_for('home') }}">Home</a>
+            <a href="{{ url_for('blog') }}">Archive Hub</a>
+            {% if username %}
+                <a href="{{ url_for('logout') }}">Logout ({{ username }})</a>
+            {% endif %}
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="hero glass small">
+            <span class="pill">Public pages</span>
+            <h2>Archive Hub</h2>
+            <p>
+            Some blog pages are missing from the hub, but not from the site.
+            If you want to find them, stop thinking about places and start thinking about names.
+            The characters might know a little more than they let on.
+            </p>
+        </section>
+
+        <section class="grid two">
+            <a class="tile-card glass card-a" href="{{ url_for('blog_shrek') }}">
+                <div class="tile-overlay">
+                    <span class="pill">Swamp Team</span>
+                    <h3>Shrek</h3>
+                    <p>Mud, chaos, and ogre-level complaints.</p>
+                </div>
+            </a>
+
+            <a class="tile-card glass card-b" href="{{ url_for('blog_po') }}">
+                <div class="tile-overlay">
+                    <span class="pill">Jade Palace Team</span>
+                    <h3>Kung-Fu-Panda</h3>
+                    <p>Dumplings, inner peace, and meme discipline.</p>
+                </div>
+            </a>
+
+            <a class="tile-card glass card-c" href="{{ url_for('blog_alex') }}">
+                <div class="tile-overlay">
+                    <span class="pill">Madagascar Ops</span>
+                    <h3>Madagascar</h3>
+                    <p>Fashion, panic, and suspiciously confident planning.</p>
+                </div>
+            </a>
+
+            <a class="tile-card glass card-d" href="{{ url_for('blog_hiccup') }}">
+                <div class="tile-overlay">
+                    <span class="pill">Bee Movie Team</span>
+                    <h3>The Bee Army</h3>
+                    <p>Honey, lawsuits, and maximum bee energy.</p>
+                </div>
+            </a>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnlyFlags | Sign In</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="page-final">
+    <main class="login-wrap">
+        <section class="final-card login-card-alt">
+            <span class="final-badge">Studio sign-in</span>
+            <h1>Enter the portal</h1>
+            <p class="final-subtitle">
+                Only authorized creators and staff may log in.
+            </p>
+
+            <form method="POST" class="form login-form-alt">
+                <label for="username">Username</label>
+                <input id="username" name="username" type="text" placeholder="Enter username" required>
+
+                <label for="password">Password</label>
+                <input id="password" name="password" type="password" placeholder="Enter password" required>
+
+                <button type="submit" class="btn btn-primary">Sign in</button>
+            </form>
+
+            {% if error %}
+                <div class="notice error login-notice-alt">{{ error }}</div>
+            {% endif %}
+
+            <div class="notice login-notice-alt">
+                Some test accounts are rumored to still exist.
+            </div>
+        </section>
+    </main>
+</body>
+</html>

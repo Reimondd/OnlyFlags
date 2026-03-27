@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnlyFlags | Studio Edition</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="page-main">
+    <header class="topbar">
+        <div class="brand brand-logo">
+            <img src="{{ url_for('static', filename='images/onlyflags_logo.png') }}" alt="Site logo" class="site-logo">
+        </div>
+        <nav class="nav">
+            <a href="{{ url_for('home') }}">Home</a>
+            <a href="{{ url_for('blog') }}">Archive Hub</a>
+            {% if username %}
+                <a href="{{ url_for('logout') }}">Logout ({{ username }})</a>
+            {% endif %}
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="hero glass">
+            <div class="hero-text">
+                <span class="pill">Studio access portal</span>
+                <h2>Welcome to the studio archive</h2>
+                <p>
+                    Some pages are missing from the hub, but not from the site.
+                    If you want to find them, stop thinking about places and start thinking about names.
+                    The characters might know a little more than they let on.
+                </p>
+                <div class="actions">
+                    <a class="btn btn-primary" href="{{ url_for('blog') }}">Open Archive Hub</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="grid four">
+            <article class="card glass">
+                <h3>Shrek</h3>
+                <p>Shrek complains, Donkey overshares, and the mud has strong opinions.</p>
+            </article>
+            <article class="card glass">
+                <h3>Kung-Fu-Panda</h3>
+                <p>Po posts training memes and dumpling-powered wisdom.</p>
+            </article>
+            <article class="card glass">
+                <h3>Madagascar</h3>
+                <p>Alex and the crew are still “totally in control.”</p>
+            </article>
+            <article class="card glass">
+                <h3>The bee army</h3>
+                <p>"You either die a hero, or you live long enough to see yourself become the middle manager of a regional distribution center for a florist in Pasadena."</p>
+            </article>
+        </section>
+
+        <section class="card glass">
+            <h3>Studio notes</h3>
+            <p>
+                Some old internal routes still exist. Public pages are listed in the hub.
+                Not every page is meant to be public.
+            </p>
+        </section>
+    </main>
+</body>
+</html>
+<!-- OnlyFlags #1 -->

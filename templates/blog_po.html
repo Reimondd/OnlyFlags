@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archive Entry</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="page-b">
+    <header class="topbar">
+        <div class="brand brand-logo">
+            <img src="{{ url_for('static', filename='images/onlyflags_logo.png') }}" alt="Site logo" class="site-logo">
+        </div>
+        <nav class="nav">
+            <a href="{{ url_for('blog') }}">Back to Blog Hub</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="hero glass small">
+            <span class="pill">Archive Entry</span>
+            <h2>Dumpling-powered greatness</h2>
+            <p>Inner peace is temporary. Snack breaks are forever.</p>
+        </section>
+
+        <section class="media-card glass">
+            <div class="media-top">MASTER SHIFU: FOCUS</div>
+            <div class="media-bottom">ME: THINKING ABOUT DUMPLINGS</div>
+        </section>
+
+        <section class="stack">
+            <article class="card glass">
+                <h3>Storytime</h3>
+                <p>
+                    Po: “Shrek told me the path is a person, not a place.”
+                </p>
+            </article>
+
+            <article class="card glass">
+                <h3>Meme report #1</h3>
+                <p>
+                    Tai Lung may be dangerous,
+                    but have you ever tried standing between Po and a dumpling tray?
+                </p>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

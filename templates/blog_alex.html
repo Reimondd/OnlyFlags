@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archive Entry</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="page-c">
+    <header class="topbar">
+        <div class="brand brand-logo">
+            <img src="{{ url_for('static', filename='images/onlyflags_logo.png') }}" alt="Site logo" class="site-logo">
+        </div>
+        <nav class="nav">
+            <a href="{{ url_for('blog') }}">Back to Blog Hub</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="hero glass small">
+            <span class="pill">Archive Entry</span>
+            <h2>Stylish chaos coordination</h2>
+            <p>The plan is flawless until the penguins are involved.</p>
+        </section>
+
+        <section class="media-card glass">
+            <div class="media-top">WHEN THE PLAN IS “STAY CALM”</div>
+            <div class="media-bottom">AND THE PENGUINS SAY “SMILE AND WAVE”</div>
+        </section>
+
+        <section class="stack">
+            <article class="card glass">
+                <h3>Storytime</h3>
+                <p>
+                    Alex: “Po told me the name belongs to someone very full of himself.”
+                </p>
+            </article>
+            <article class="card glass">
+                <h3>The Lion</h3>
+                <p>
+                    "The directory isn't as grand as a castle. If your wordlist is 'Lord' heavy, you'll come up short... just like him."
+                </p>
+            </article>
+
+            <article class="card glass">
+                <h3>Meme report</h3>
+                <p>
+                    Everyone says “we’ve got this”
+                    right before the mission becomes a documentary.
+                </p>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
