@@ -52,7 +52,7 @@ OnlyFlags/
 ├── templates/
 │   ├── acces_denied.html
 │   ├── blog.html
-│   ├── blog_[user].html  # (alex, hiccup, po, shrek, hidden)
+│   ├── blog_[user].html  # (Alex, Barry, Po, Shrek, hidden)
 │   ├── home.html
 │   ├── login.html
 │   ├── robots.html
@@ -80,3 +80,4 @@ OnlyFlags/
 
 
 ## Hope you enjoy our challenge
+## Please dont sue us DreamWorks!!!
