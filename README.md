@@ -52,7 +52,7 @@ OnlyFlags/
 ├── templates/
 │   ├── acces_denied.html
 │   ├── blog.html
-│   ├── blog_[user].html  # (Alex, Barry, Po, Shrek, hidden)
+│   ├── blog_[user].html  # (Alex, Barry, Po, Shrek, ItsaSecret)
 │   ├── home.html
 │   ├── login.html
 │   ├── robots.html
